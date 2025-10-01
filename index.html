@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Don Sabor</title>
+
+  <style>
+    body h1{
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      
+      color: #000000;
+      line-height: 1.6;
+    }
+
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #000000;
+      line-height: 1.6;
+    }
+    header {
+       
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    
+    nav {
+      
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+    nav button {
+      background: rgb(255, 255, 255);
+      color: #b30000;
+      border: 2px solid #b30000;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    nav button:hover {
+      background: #b30000;
+      color: white;
+    }
+
+    
+    section {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    section.active {
+      display: block;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #000000;
+    }
+
+    
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .producto {
+      background: rgb(255, 255, 255);
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .producto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .producto img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+    }
+    .producto h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #333;
+      margin: 0;
+    }
+
+    
+    footer {
+      background: #222;
+      color: #eee;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+     body {
+      margin: 40;
+      min-height: 1vh;
+      background-image: url("imagenes/Marco media carta sin logo.png");
+      background-size: 1521px;            
+      background-repeat: no-repeat;   
+      background-position: center;       
+      background-attachment: fixed;   
+      
+    }
+   
+
+    .contenido {
+      background-color: rgba(255, 255, 255, 0.85); 
+      padding: 20px;
+      border-radius: 12px;
+      max-height: 1800px;
+    
+      margin: 40px auto;
+    }
+
+
+
+      
+
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <link rel="icon" href="imagenes/Logo pestaña.jpg">
+</head>
+
+<body>
+  <header>
+     <img src="imagenes/Logo Don Sabor PYME.png" alt="Imagen principal" style="max-width:350px; border-radius:15px; box-shadow:0 4px 12px rgba(255, 255, 255, 0.2);">
+     
+    </section>
+    <h1>Catálogo Don Sabor</h1>
+    <h3>San Rafael de Alajuela - Tel. (506)2239-3960 - donsabor@donsaborcr.com</h3>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('inicio')">Inicio</button>
+    <button onclick="mostrarSeccion('Pulpas')">Pulpas</button>
+    <button onclick="mostrarSeccion('Salsas')">Salsas</button>
+    <button onclick="mostrarSeccion('Otros')">Otros productos</button>
+  </nav>
+
+  <section id="inicio" class="active">
+    <h2>Bienvenido a Don Sabor </h2>
+    <h2>Productos de calidad</h2>
+    <h2>Explora nuestro catálogo de productos.</h2>
+   
+
+
+  </section>
+
+  <section id="Pulpas">
+    <h2>Pulpas en Galón</h2>
+    <div class="productos">
+      <div class="producto"><img src="imagenes/Pulpa de mora.jpg" alt="Pulpa"><h3>Pulpa de Mora</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de guanabana.jpg" alt="Pulpa"><h3>Pulpa de Guanábana</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de maracuya.jpg" alt="Pulpa"><h3>Pulpa de Maracuyá</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de fresa.jpg" alt="Pulpa"><h3>Pulpa de Fresa</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de mango.JPG" alt="Pulpa"><h3>Pulpa de Mango</h3></div>
+      <div class="producto"><img src="imagenes/Piña colada.JPG" alt="Pulpa"><h3>Pulpa de Piña Colada</h3></div>
+      <div class="producto"><img src="imagenes/Mixto caribeño.JPG" alt="Pulpa"><h3>Pulpa de Mixto Caribeño</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de piña.JPG" alt="Pulpa"><h3>Pulpa de Piña</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de piña con arroz.JPG" alt="Pulpa"><h3>Pulpa de Piña con Arroz</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de cas.JPG" alt="Pulpa"><h3>Pulpa de Cas</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de tamarindo.JPG" alt="Pulpa"><h3>Pulpa de Tamarindo</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de carambola.JPG" alt="Pulpa"><h3>Pulpa de Carambola</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de naranja.JPG" alt="Pulpa"><h3>Pulpa de Naranja</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de guayaba.JPG" alt="Pulpa"><h3>Pulpa de Guayaba(Temporada)</h3></div>
+      <div class="producto"><img src="imagenes/Jugo de naranja.JPG" alt="Pulpa"><h3>Jugo de Naranja</h3></div>
+      <div class="producto"><img src="imagenes/Limon(puro).JPG" alt="Pulpa"><h3>Jugo de Limón(Puro)</h3></div>
+      <div class="producto"><img src="imagenes/Limonada.JPG" alt="Pulpa"><h3>Limonada</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de pera.JPG" alt="Pulpa"><h3>Pulpa de Pera</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de melocoton.JPG" alt="Pulpa"><h3>Pulpa de Melocotón</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de manzana.JPG" alt="Pulpa"><h3>Pulpa de Manzana</h3></div>
+      <div class="producto"><img src="imagenes/Sirope sabor a kola.JPG" alt="Pulpa"><h3>Sirope de Kola</h3></div>
+      <div class="producto"><img src="imagenes/Crema de coco.JPG" alt="Pulpa"><h3>Crema de Coco</h3></div>
+    </div>
+
+    <h2>Pulpas en Litro</h2>
+      <div class="productos"> 
+      <div class="producto"><img src="imagenes/Pulpa de mora litro.JPG" alt="Pulpa"><h3>Pulpa de Mora</h3></div>
+      <div class="producto"><img src="imagenes/Crema de coco litro.JPG" alt="Pulpa"><h3>Pulpa de Guanábana</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de fresa litro.JPG" alt="Pulpa"><h3>Pulpa de Maracuyá</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de fresa litro.JPG" alt="Pulpa"><h3>Pulpa de Fresa</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de mango litro.JPG" alt="Pulpa"><h3>Pulpa de Mango</h3></div>
+      <div class="producto"><img src="imagenes/Piña colada litro.JPG" alt="Pulpa"><h3>Pulpa Piña Colada</h3></div>
+      <div class="producto"><img src="imagenes/Mixto caribeño litro.JPG" alt="Pulpa"><h3>Mixto Caribeño</h3></div>
+      <div class="producto"><img src="imagenes/Frutas mixtas litro.JPG" alt="Pulpa"><h3>Mixto de Frutas</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de piña litro.JPG" alt="Pulpa"><h3>Pulpa de Piña</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de piña con arroz litro.JPG" alt="Pulpa"><h3>Pulpa de Piña con Arroz</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de cas litro.JPG" alt="Pulpa"><h3>Pulpa de Cas</h3></div>
+      <div class="producto"><img src="imagenes/Pulpa de tamarindo litro.JPG" alt="Pulpa"><h3>Pulpa de Tamarindo</h3></div>
+      <div class="producto"><img src="imagenes/Jugo de naranja litro.JPG" alt="Pulpa"><h3>Jugo de Naranja</h3></div>
+      <div class="producto"><img src="imagenes/Crema de coco litro.JPG" alt="Pulpa"><h3>Crema de Coco</h3></div>
+      
+
+</div>
+
+
+  </section>
+
+  <section id="Salsas">
+    <h2>Salsas</h2>
+    <div class="productos">
+      <div class="producto"><img src="imagenes/Salsa de tomate ketchup.JPG" alt="Salsa"><h3>Salsa de Tomate(ketchup)</h3></div>
+      <div class="producto"><img src="imagenes/Salsa de tomate.JPG" alt="Salsa"><h3>Salsa de Tomate(Económica)</h3></div>
+      <div class="producto"><img src="imagenes/Salsa inglesa.JPG" alt="Salsa"><h3>Salsa Inglesa </h3></div>
+      <div class="producto"><img src="imagenes/Salsa inglesa premiun.JPG" alt="Salsa"><h3>Salsa Inglesa(Premiun)</h3></div>
+      <div class="producto"><img src="imagenes/Salsa barbacoa.JPG" alt="Salsa"><h3>Salsa Barbacoa</h3></div>
+      <div class="producto"><img src="imagenes/Salsa china.JPG" alt="Salsa"><h3>Salsa China</h3></div>
+      <div class="producto"><img src="imagenes/Salsa rosada.JPG" alt="Salsa"><h3>Salsa Rosada</h3></div>
+      <div class="producto"><img src="imagenes/Salsa pizza.JPG" alt="Salsa"><h3>Salsa Pizza</h3></div>
+      <div class="producto"><img src="imagenes/Mayonesa premiun.JPG" alt="Salsa"><h3>Mayonesa premiun</h3></div>
+      <div class="producto"><img src="imagenes/Mayonesa economica.JPG" alt="Salsa"><h3>Mayonesa Económica</h3></div>
+      <div class="producto"><img src="imagenes/Mayonesa portion pack.JPG" alt="Salsa"><h3>Porcion pack Mayonesa DS, 100u</h3></div>
+      <div class="producto"><img src="imagenes/Tomate portion pack.JPG" alt="Salsa"><h3>Porcion pack Tomate DS, 100u</h3></div>
+      <div class="producto"><img src="imagenes/Mostaza.JPG" alt="Salsa"><h3>Mostaza</h3></div>
+      <div class="producto"><img src="imagenes/Chilero.JPG" alt="Salsa"><h3>Chilero</h3></div>
+      <div class="producto"><img src="imagenes/Jalapeño.JPG" alt="Salsa" ><h3>Chile Jalapeño Bolsa G</h3></div>
+      <div class="producto"><img src="imagenes/Vinagres.JPG" alt="Salsa"><h3>Vinagre</h3></div>
+      <div class="producto"><img src="imagenes/Tabasco.JPG" alt="Salsa"><h3>Tabasco</h3></div>
+     
+    </div>
+  </section>
+
+  <section id="Otros">
+    <h2>Otros productos</h2>
+    <div class="productos"> 
+      <div class="producto"><img src="imagenes/Super Taco.jpg" alt="Producto"><h3>Súper Taco 12uds</h3></div>
+      <div class="producto"><img src="imagenes/Taco economico.jpg" alt="Producto"><h3>Taco Económico 12uds</h3></div>
+      <div class="producto"><img src="imagenes/Taco pequeño.jpg" alt="Producto"><h3>Taco Pequeño 12uds</h3></div>
+      <div class="producto"><img src="imagenes/Tortillas tostadas.JPG" alt="Producto"><h3>Tortillas Tostadas</h3></div>
+      <div class="producto"><img src="imagenes/Queso.jpg" alt="Producto"><h3>Queso Amarillo, Kilo</h3></div>
+      <div class="producto"><img src="imagenes/Condimentos.jpg" alt="Producto"><h3>Condimentos</h3></div>
+      <div class="producto"><img src="imagenes/Frescos en Polvo.jpg" alt="Producto"><h3>Frescos en Polvo</h3></div>
+      <div class="producto"><img src="imagenes/Gelatina.jpg" alt="Producto"><h3>Gelatina en Polvo</h3></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Don Sabor - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    function mostrarSeccion(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
